@@ -1,0 +1,130 @@
+:root {
+    /*
+     * Colores repetidos en las variables:
+     * #0a0a12 se usaba 3 veces, #ff007f 5 veces, #00f0ff 6 veces,
+     * #1a1a2e 2 veces y white 4 veces.
+     */
+    --color-fondo: #0a0a12;
+    --color-acento: #ff007f;
+    --color-cian: #00f0ff;
+    --color-panel: #1a1a2e;
+    --color-texto: white;
+}
+
+/* border-box incluye padding y borde dentro del tamaño declarado. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.encabezado-principal {
+    text-align: center;
+}
+
+header {
+    background-color: var(--color-acento);
+    padding: 20px;
+}
+
+nav a {
+    color: var(--color-texto);
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--color-fondo);
+    text-decoration: underline;
+}
+
+h2 {
+    color: var(--color-cian);
+    border-bottom: 2px solid var(--color-cian);
+}
+
+.tarjeta {
+    border: 2px solid var(--color-acento);
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.enlace-seccion {
+    color: var(--color-cian);
+}
+
+#destacado {
+    background-color: var(--color-panel);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid var(--color-cian);
+    padding: 8px;
+}
+
+footer {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    padding: 20px;
+}
+
+.titulo-principal {
+    color: var(--color-cian);
+    margin: 0;
+}
+
+.subtitulo {
+    margin-top: 5px;
+}
+
+.contenido-principal {
+    padding: 20px;
+}
+
+.titulo-realidad-virtual {
+    color: var(--color-cian);
+}
+
+.titulo-arcade,
+.titulo-esports {
+    color: var(--color-acento);
+}
+
+.boton-envio {
+    background-color: var(--color-cian);
+    color: var(--color-fondo);
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-envio:hover,
+.boton-envio:focus {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+}
+
+.pie-principal {
+    margin: 0;
+}
+
+.pie-contacto {
+    margin-top: 5px;
+    color: var(--color-panel);
+}
